@@ -1,17 +1,21 @@
-import Campo from "../../components/Campo/Campo"
-import "./TelaHome.css"
-export default function TelaHome() {
-    let x;
-    return (
-        <div className="TelaHomeContainer">
-            <div className="TelaHomeBlocoCentral">
-                <div className="TelaHomeCampos">
-                    <Campo placeholder={"Nome Completo"} value={x} />
-                    <Campo placeholder={"E-mail"} value={x} />
-                    <Campo placeholder={"Senha"} value={x} />
-                    <Campo placeholder={"Confirme a senha"} value={x} />
-                </div>
-            </div>
-        </div>
-    )
+import React from "react";
+import Navbar from "../../components/Navbar/Navbar";
+import CampeonatosAtivos from "./CampeonatosAtivos/CampeonatosAtivos";
+import Recomendacoes from "./Recomendacoes/Recomendacoes";
+import ResultadosRecentes from "./ResultadosRecentes/ResultadosRecentes";
+import "./TelaHome.css";
+
+function Home() {
+  return (
+    <div className="home-container">
+      <Navbar />
+      <div className="home-content">
+        <CampeonatosAtivos />
+        <Recomendacoes />
+        <ResultadosRecentes />
+      </div>
+    </div>
+  );
 }
+
+export default Home;

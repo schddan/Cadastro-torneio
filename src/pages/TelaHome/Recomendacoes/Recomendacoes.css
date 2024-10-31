@@ -1,0 +1,20 @@
+.recommendations {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .recommendations h2 {
+    font-size: 1.5em;
+  }
+  
+  .recommendations ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recommendations li {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+  }
+  

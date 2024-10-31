@@ -1,0 +1,17 @@
+.recent-results {
+    padding: 10px;
+  }
+  
+  .recent-results h2 {
+    font-size: 1.5em;
+  }
+  
+  .recent-results ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-results li {
+    margin: 8px 0;
+  }
+  
