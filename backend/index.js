@@ -3,7 +3,9 @@ const app = express()
 const port = 8000
 const bcrypt = require("bcrypt")
 const pool = require("./db")
+const cors = require("cors")
 
+app.use(cors())
 app.use(express.json())
 
 app.post("./register", async (req, res) => {
